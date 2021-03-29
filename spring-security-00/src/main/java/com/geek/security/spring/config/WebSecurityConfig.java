@@ -13,12 +13,15 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 /**
  * 安全配置。
  * 用户信息、密码编码器、安全拦截机制。
+ *
+ * @author geek
  */
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     // 定义用户信息服务（查询用户信息）。查询数据库或内存方式。
     @Bean
+    @Override
     public UserDetailsService userDetailsService() {
         // 基于内存的方式。
         InMemoryUserDetailsManager inMemoryUserDetailsManager = new InMemoryUserDetailsManager();
@@ -50,4 +53,5 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin()// 允许表单登录。
                 .successForwardUrl("/login-success");// 自定义登录成功的页面地址。
     }
+
 }

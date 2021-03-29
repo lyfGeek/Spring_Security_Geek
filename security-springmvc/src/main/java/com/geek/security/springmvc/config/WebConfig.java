@@ -13,6 +13,9 @@ import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
+/**
+ * @author geek
+ */
 @Configuration// SpringMVC.xml。
 @EnableWebMvc
 @ComponentScan(basePackages = "com.geek.security.springmvc",
@@ -42,4 +45,5 @@ public class WebConfig implements WebMvcConfigurer {
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/").setViewName("login");
     }
+
 }

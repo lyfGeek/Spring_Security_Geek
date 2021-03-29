@@ -11,8 +11,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * @author geek
+ */
 @Service
-public class SpringDataUserDetailService implements UserDetailsService {
+public class SpringDataUserDetailServiceImpl implements UserDetailsService {
 
     @Autowired
     private UserDao userDao;
@@ -46,4 +49,5 @@ public class SpringDataUserDetailService implements UserDetailsService {
 
         return userDetails;
     }
+
 }

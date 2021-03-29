@@ -4,6 +4,9 @@ import com.geek.security.springmvc.config.ApplicationConfig;
 import com.geek.security.springmvc.config.WebConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+/**
+ * @author geek
+ */
 public class SpringApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
     /*
@@ -33,4 +36,5 @@ public class SpringApplicationInitializer extends AbstractAnnotationConfigDispat
 //        return new String[0];
         return new String[]{"/"};
     }
+
 }

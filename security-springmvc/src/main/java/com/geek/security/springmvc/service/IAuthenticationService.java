@@ -3,7 +3,10 @@ package com.geek.security.springmvc.service;
 import com.geek.security.springmvc.model.AuthenticationRequest;
 import com.geek.security.springmvc.model.UserDto;
 
-public interface AuthenticationService {
+/**
+ * @author geek
+ */
+public interface IAuthenticationService {
 
     /**
      * 认证信息。校验用户身份是否合法。
@@ -12,4 +15,5 @@ public interface AuthenticationService {
      * @return 认证成功的用户信息。
      */
     UserDto authentication(AuthenticationRequest authenticationRequest);
+
 }

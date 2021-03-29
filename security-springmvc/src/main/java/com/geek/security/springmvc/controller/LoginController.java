@@ -2,7 +2,7 @@ package com.geek.security.springmvc.controller;
 
 import com.geek.security.springmvc.model.AuthenticationRequest;
 import com.geek.security.springmvc.model.UserDto;
-import com.geek.security.springmvc.service.AuthenticationService;
+import com.geek.security.springmvc.service.IAuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,11 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpSession;
 
+/**
+ * @author geek
+ */
 @RestController
 public class LoginController {
 
     @Autowired
-    private AuthenticationService authenticationService;
+    private IAuthenticationService authenticationService;
 
     /**
      * 登录功能。
@@ -83,4 +86,5 @@ public class LoginController {
         }
         return fullname + " 访问资源 r2";
     }
+
 }

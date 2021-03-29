@@ -2,6 +2,9 @@ package com.geek.security.springboot.model;
 
 import lombok.Data;
 
+/**
+ * @author geek
+ */
 @Data
 public class UserDto {
 

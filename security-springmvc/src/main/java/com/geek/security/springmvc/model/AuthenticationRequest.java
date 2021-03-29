@@ -2,6 +2,9 @@ package com.geek.security.springmvc.model;
 
 import lombok.Data;
 
+/**
+ * @author geek
+ */
 @Data
 public class AuthenticationRequest {
     // 认证请求的参数。
@@ -9,4 +12,5 @@ public class AuthenticationRequest {
     private String username;
 
     private String password;
+
 }

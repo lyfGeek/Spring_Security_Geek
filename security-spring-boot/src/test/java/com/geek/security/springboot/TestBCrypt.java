@@ -11,7 +11,7 @@ public class TestBCrypt {
     @Test
     public void testBCrypt() {
         // 对密码进行加密。
-        String hashpw = BCrypt.hashpw("123", BCrypt.gensalt());
+        String hashpw = BCrypt.hashpw("secret", BCrypt.gensalt());
 
         // hashpw = $2a$10$ZV2gne5gM44.eRTi0KFOK.MJ/OmjB3h6Aw1sUk9YoOU8rbSUHtYwG
         // hashpw = $2a$10$CKaHgxPgt0WU3SWihmSR6uOzTURqJqH8jkZ/xLGikfm2KBj1E76Jy
@@ -26,4 +26,5 @@ public class TestBCrypt {
         boolean checkpw1 = BCrypt.checkpw("123", "$2a$10$CKaHgxPgt0WU3SWihmSR6uOzTURqJqH8jkZ/xLGikfm2KBj1E76Jy");
         System.out.println("checkpw1 = " + checkpw1);
     }
+
 }

@@ -4,6 +4,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+/**
+ * @author geek
+ */
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 
@@ -17,4 +20,5 @@ public class WebConfig implements WebMvcConfigurer {
         // Spring Security 提供的。
 //        registry.addViewController("/").setViewName("redirect:/login");
     }
+
 }

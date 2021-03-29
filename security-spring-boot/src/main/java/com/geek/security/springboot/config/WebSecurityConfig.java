@@ -12,6 +12,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 /**
  * 安全配置。
  * 用户信息、密码编码器、安全拦截机制。
+ *
+ * @author geek
  */
 @Configuration
 @EnableGlobalMethodSecurity(securedEnabled = true, prePostEnabled = true)
@@ -106,4 +108,5 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         // 跳转到 “/logout-view?logout”。
         ;
     }
+
 }

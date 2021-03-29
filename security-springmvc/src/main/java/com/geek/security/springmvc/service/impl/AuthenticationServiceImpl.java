@@ -2,7 +2,7 @@ package com.geek.security.springmvc.service.impl;
 
 import com.geek.security.springmvc.model.AuthenticationRequest;
 import com.geek.security.springmvc.model.UserDto;
-import com.geek.security.springmvc.service.AuthenticationService;
+import com.geek.security.springmvc.service.IAuthenticationService;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.Set;
 
 @Service
-public class AuthenticationServiceImpl implements AuthenticationService {
+public class AuthenticationServiceImpl implements IAuthenticationService {
 
     // 用户信息。
     private Map<String, UserDto> userMap = new HashMap<>();
